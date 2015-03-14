@@ -5,6 +5,7 @@ import org.springframework.hateoas.Identifiable;
 import org.springframework.hateoas.ResourceSupport;
 
 import java.math.BigDecimal;
+import java.util.Date;
 
 public class Album extends ResourceSupport {
   private Long uid;
@@ -13,6 +14,13 @@ public class Album extends ResourceSupport {
   private BigDecimal price;
   private String recordingLabel;
 
+  private Date javaUtilDateField;
+  public Date getJavaUtilDateField() {
+      return javaUtilDateField;
+  }
+  public void setJavaUtilDateField(Date javaUtilDateField) {
+      this.javaUtilDateField = javaUtilDateField;
+  }
   public String getName() {
     return name;
   }
