@@ -1,6 +1,7 @@
 
 Minimal swagger-spring-mvc config using web jar for swagger ui import.
 ```
+./gradlew :swagger-ui:publishToMavenLocal
 ./gradlew :spring3-music:tomcatRun
 ```
 
