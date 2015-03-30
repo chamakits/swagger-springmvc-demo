@@ -3,6 +3,10 @@ apply plugin: 'tomcat'
 
 apply from: "$rootDir/gradle/functionalTest.gradle"
 
+repositories {
+    mavenLocal()
+}
+
 jvmsrc {
   packageName "com.ak.spring3.music"
 }

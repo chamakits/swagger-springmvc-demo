@@ -11,7 +11,8 @@ ext {
   logbackVersion = '1.1.2'
   tomcatVersion = '7.0.53'
   swaggerSpringMvcVersion = System.getenv('LATEST_SSMVC_VERSION') ?:'1.0.1-SNAPSHOT'
-  swaggerUiVersion = '2.0.17'
+//  swaggerUiVersion = '2.0.17'
+  swaggerUiVersion = '2.1.8-M1'
   seleniumVersion = '2.41.0'
   chromeDriverVersion = '2.41.0'
   firefoxDriverVersion = '2.41.0'
@@ -29,7 +30,8 @@ ext.libs = [
         ],
 
         swaggerSpringMvcUi: [
-                "org.ajar:swagger-spring-mvc-ui:0.4"
+                "org.ajar:swagger-spring-mvc-ui:0.5-SNAPSHOT"
+                //"org.ajar:swagger-spring-mvc-ui:0.4"
         ],
 
         springWeb     : { String version = springVersion ->
